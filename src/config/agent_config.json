@@ -1,0 +1,9 @@
+{
+     
+    "ServerIP":"127.0.0.1",
+    "ServerPort": 1883,
+    "DeviceName": "SNMP_NMS",
+    "DevType": "Service",
+    "version": "v1.0.1",
+    "plugin": "./module/SNMP-NMS-plugin.js"
+}

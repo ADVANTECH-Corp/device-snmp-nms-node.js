@@ -1,0 +1,16 @@
+{
+  "name": "device-snmp-nms-node.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "device_snmp-nms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam35 Lin",
+  "license": "ISC",
+
+  "dependencies": {
+    "agentlite": "git+ssh://git@advgitlab.eastasia.cloudapp.azure.com:EdgeSense/AgentLite-Node.js.git",
+    "net-snmp": "^1.2.4"
+  }
+}

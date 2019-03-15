@@ -1,0 +1,86 @@
+{
+  "firmwareIdentify": {
+    "name": "firmwareIdentify",
+    "oid": "1.3.6.1.4.1.10297.101.1.2.1.1.2.1",
+    "nodetype": "column",
+    "class": "objecttype",
+    "syntax": {
+      "type": "OCTET STRING",
+      "class": "type",
+      "constraints": {
+        "size": [
+          {
+            "min": 1,
+            "max": 16
+          }
+        ]
+      }
+    },
+    "maxaccess": "read-only",
+    "status": "current",
+    "description": "The firmware chip ID"
+  },
+  "firmwareVersion": {
+    "name": "firmwareVersion",
+    "oid": "1.3.6.1.4.1.10297.101.1.2.1.1.3.1",
+    "nodetype": "column",
+    "class": "objecttype",
+    "syntax": {
+      "type": "OCTET STRING",
+      "class": "type",
+      "constraints": {
+        "size": [
+          {
+            "min": 1,
+            "max": 16
+          }
+        ]
+      }
+    },
+    "maxaccess": "read-only",
+    "status": "current",
+    "description": "The firmware version"
+  },
+  "doValue1": {
+    "name": "doValue1",
+    "oid": "1.3.6.1.4.1.10297.101.1.6.1.1.11.1",
+    "nodetype": "column",
+    "class": "objecttype",
+    "syntax": {
+      "type": "OCTET STRING",
+      "class": "type",
+      "constraints": {
+        "size": [
+          {
+            "min": 1,
+            "max": 8
+          }
+        ]
+      }
+    },
+    "maxaccess": "read-write",
+    "status": "current",
+    "description": "If the DO channel is in 'DO', 'LowToHighDelay' or 'HighToLowDelay' mode, the value will be '0' or '1'. If the DO channel is in 'PulseOutput' mode, the value will be from '00000000' to '4294967295' in Decimal to represent the remained pulse counts to output."
+  },
+  "doValue2": {
+    "name": "doValue2",
+    "oid": "1.3.6.1.4.1.10297.101.1.6.1.1.11.2",
+    "nodetype": "column",
+    "class": "objecttype",
+    "syntax": {
+      "type": "OCTET STRING",
+      "class": "type",
+      "constraints": {
+        "size": [
+          {
+            "min": 1,
+            "max": 8
+          }
+        ]
+      }
+    },
+    "maxaccess": "read-write",
+    "status": "current",
+    "description": "If the DO channel is in 'DO', 'LowToHighDelay' or 'HighToLowDelay' mode, the value will be '0' or '1'. If the DO channel is in 'PulseOutput' mode, the value will be from '00000000' to '4294967295' in Decimal to represent the remained pulse counts to output."
+  }
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=SNMP-NMS Service
+After=network.target systemd-sysctl.service systemd-modules-load.service
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/EdgeSense/SNMP-NMS
+Restart=no
+Type=simple
+ExecStart=/usr/local/EdgeSense/SNMP-NMS/node /usr/local/EdgeSense/SNMP-NMS/device_snmp-nms.js
+RemainAfterExit=true
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target

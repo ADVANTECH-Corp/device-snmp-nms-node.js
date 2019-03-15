@@ -1,0 +1,24 @@
+{
+  "interval": 20,
+
+  "devicelist" : [
+    {
+      "devid": "ADAM-6017",
+      "ip": "172.22.12.27",
+      "port": 161,
+      "snmpver": "2c",
+      "community": "public",
+      "objectfile" : "ADAM-Common.json"
+    },
+
+    {
+      "devid": "ADAM-6050",
+      "ip": "172.22.12.110",
+      "port": 161,
+      "snmpver": "2c",
+      "community": "public",
+      "objectfile" : "ADAM-Common.json"
+    }
+
+  ]
+}
